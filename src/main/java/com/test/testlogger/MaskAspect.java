@@ -48,7 +48,7 @@ public class MaskAspect {
 		return args;
 	}
 	
-	@Around("execution(* com.tmobile.eus.digitalservices.testlogger.GlobalLogger.*(..))")
+	@Around("execution(* com.test.testlogger.GlobalLogger.*(..))")
 	public void info(ProceedingJoinPoint jp) throws Throwable {
 
 		org.aspectj.lang.Signature sign = jp.getSignature();
