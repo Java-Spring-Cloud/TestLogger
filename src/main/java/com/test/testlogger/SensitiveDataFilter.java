@@ -7,7 +7,7 @@ import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.filter.Filter;
 import ch.qos.logback.core.spi.FilterReply;
 
-public class SampleFilter extends Filter<ILoggingEvent> {
+public class SensitiveDataFilter extends Filter<ILoggingEvent> {
 
 	private static final String ELEMENT_FIELD_VALUE = "\":";
 
