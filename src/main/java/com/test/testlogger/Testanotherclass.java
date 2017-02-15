@@ -1,7 +1,8 @@
 package com.test.testlogger;
 
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -10,11 +11,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @Component
 public class Testanotherclass {
 
-	//private static final Logger logger = LoggerFactory.getLogger(TestloggerApplication.class); 
+	private static final Logger logger = LoggerFactory.getLogger(Testanotherclass.class); 
 	
 	
-	 @Autowired 
-	 GlobalLogger logger;
+	/* @Autowired 
+	 GlobalLogger logger;*/
 	
 	
     public void performSomeTask(){
